@@ -74,5 +74,6 @@ You only need the essentials to run this tool:
 
 ---
 
-🔮 Future Roadmap : 
-While S2-Guardian is highly functional and will significantly improve your code security, it is currently in its initial phase. Massive architectural upgrades are currently in development. Without revealing too much, the upcoming versions will introduce advanced capabilities designed to break current operational limits, ensuring deeper independence, robust scalability, and an entirely new layer of logic analysis. Stay tuned.
+## 🔮 Future Roadmap
+
+    While S2-Guardian is highly functional and will significantly improve your code security, it is currently in its    initial phase. Massive architectural upgrades are currently in development. Without revealing too much, the upco    ming versions will introduce advanced capabilities designed to break current operational limits, ensuring deeper    independence, robust scalability, and an entirely new layer of logic analysis. Stay tuned.
