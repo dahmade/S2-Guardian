@@ -48,33 +48,31 @@ You only need the essentials to run this tool:
    git clone [https://github.com/dahmade/s2-guardian.git](https://github.com/dahmade/s2-guardian.git)
    cd s2-guardian
 
-2. Run the automated setup script (This creates a virtual environment and installs dependencies):
-    chmod +x setup.sh
-    ./setup.sh
-
-3. Set your API Key (Never hardcode this in your scripts): 
-    export GOOGLE_API_KEY="your_actual_gemini_api_key_here"
-
-4. Activate the environment:
-    source venv/bin/activate
+2. **Run the automated setup script, set your API key, and activate the environment:**
+   ```bash
+   chmod +x setup.sh
+   ./setup.sh
+   export GOOGLE_API_KEY="your_actual_gemini_api_key_here"
+   source venv/bin/activate
 
 ---
 
-🚀 Usage Examples
+## 🎯 Usage Examples
 
-1. Standard Security Audit:  
+```bash
+# 1. Standard Security Audit:
     python3 s2_guardian.py vulnerable_code.c
 
-2. Auto-Fix (With automatic backup):
+# 2. Auto-Fix (With automatic backup):
     python3 s2_guardian.py server_script.py --fix
 
-3. Generate Edge-Case Tests:
+# 3. Generate Edge-Case Tests:
     python3 s2_guardian.py algorithm.c --test
 
-4. Exploit Analysis & Memory Map (C Only):
+# 4. Exploit Analysis & Memory Map (C Only):
     python3 s2_guardian.py vulnerable_code.c --exploit
 
 ---
 
-🔮 Future Roadmap
+🔮 Future Roadmap : 
 While S2-Guardian is highly functional and will significantly improve your code security, it is currently in its initial phase. Massive architectural upgrades are currently in development. Without revealing too much, the upcoming versions will introduce advanced capabilities designed to break current operational limits, ensuring deeper independence, robust scalability, and an entirely new layer of logic analysis. Stay tuned.
