@@ -58,21 +58,17 @@ You only need the essentials to run this tool:
 ---
 
 ## 🎯 Usage Examples
-
+    ```bash
     # 1. Standard Security Audit:
-        ```bash
         python3 s2_guardian.py vulnerable_code.c
 
     # 2. Auto-Fix (With automatic backup):
-        ```bash
         python3 s2_guardian.py server_script.py --fix
 
     # 3. Generate Edge-Case Tests:
-        ```bash
         python3 s2_guardian.py algorithm.c --test
 
     # 4. Exploit Analysis & Memory Map (C Only):
-        ```bash
         python3 s2_guardian.py vulnerable_code.c --exploit
 
 ---
