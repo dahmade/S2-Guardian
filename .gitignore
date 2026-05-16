@@ -1,0 +1,6 @@
+venv/
+.s2_backup/
+__pycache__/
+global_report.md
+exploit_poc.py
+tests_gen_*
