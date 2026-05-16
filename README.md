@@ -58,7 +58,7 @@ You only need the essentials to run this tool:
 ---
 
 ## 🎯 Usage Examples
-    ```bash
+    
     # 1. Standard Security Audit:
         python3 s2_guardian.py vulnerable_code.c
 
