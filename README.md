@@ -59,21 +59,24 @@ You only need the essentials to run this tool:
 
 ## 🎯 Usage Examples
 
-    ```bash
     # 1. Standard Security Audit:
+        ```bash
         python3 s2_guardian.py vulnerable_code.c
 
     # 2. Auto-Fix (With automatic backup):
+        ```bash
         python3 s2_guardian.py server_script.py --fix
 
     # 3. Generate Edge-Case Tests:
+        ```bash
         python3 s2_guardian.py algorithm.c --test
 
     # 4. Exploit Analysis & Memory Map (C Only):
+        ```bash
         python3 s2_guardian.py vulnerable_code.c --exploit
 
 ---
 
 ## 🔮 Future Roadmap
 
-    While S2-Guardian is highly functional and will significantly improve your code security, it is currently in its    initial phase. Massive architectural upgrades are currently in development. Without revealing too much, the upco    ming versions will introduce advanced capabilities designed to break current operational limits, ensuring deeper    independence, robust scalability, and an entirely new layer of logic analysis. Stay tuned.
+While S2-Guardian is highly functional and will significantly improve your code security, it is currently in its    initial phase. Massive architectural upgrades are currently in development. Without revealing too much, the upco    ming versions will introduce advanced capabilities designed to break current operational limits, ensuring deeper    independence, robust scalability, and an entirely new layer of logic analysis. Stay tuned.
