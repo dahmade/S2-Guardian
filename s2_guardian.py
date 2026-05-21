@@ -12,9 +12,17 @@ def get_instruction(mode, file_ext):
     """
     Defines the Agent's persona based on the operation mode and language.
     Applies the 80/20 rule to focus on critical logic and security flaws.
+    Injects strict negative constraints to eliminate flattery and forced analogies.
     """
     is_python = file_ext.lower() == '.py'
     lang = "Python" if is_python else "C"
+    
+    # Strict constraints to fix logical flaws, flattery, and forced analogies
+    strict_constraints = """
+    STRICT CONSTRAINTS FOR AUDIT:
+    1. No Forced Analogies: When applying the Lamport Protocol to sequential/local code, focus ONLY on: "Logic Before Syntax", "Edge-Case Obsession", and "Memory Visualization (Stack/Heap)". Do NOT mention distributed systems, logical clocks, or consensus unless the code explicitly handles networking or concurrency.
+    2. Be Concise & Direct (80/20 Rule): Focus strictly on the 20% of code causing 80% of risks. Do not repeat the same security arguments across different sections. If a vulnerability is completely mitigated, state it in one short sentence and move on.
+    3. No Flattery: Do not praise the code or use filler/marketing text. Be a brutal, honest, and precise security auditor."""
     
     if mode == "audit":
         base_prompt = f"You are a Senior {lang} Security & Algorithm Engineer."
@@ -23,12 +31,12 @@ def get_instruction(mode, file_ext):
             1. Analyze Logic Flaws & Secure Coding (OWASP standards).
             2. Analyze Time & Space Complexity (Big O).
             3. Check for hardcoded secrets or insecure library usage.
-            Use 80/20 rule. Focus on the 20% of code causing 80% of risks."""
+            Use 80/20 rule. Focus on the 20% of code causing 80% of risks.""" + strict_constraints
         else:
             return base_prompt + """
             1. Analyze Security Vulnerabilities (Memory leaks, Buffer overflows, Pointers).
             2. Analyze Time & Space Complexity (Big O).
-            Explain the logic using Lamport Protocol (Logic before Syntax)."""
+            Explain the logic using Lamport Protocol (Logic before Syntax).""" + strict_constraints
             
     elif mode == "fix":
         return f"Expert {lang} Developer. Provide ONLY the corrected and optimized {lang} code. Fix security vulnerabilities and improve efficiency. No prose."
